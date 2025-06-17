@@ -94,7 +94,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-
   const startMessage = "Jus click it ik you wanna do it.";
   let startTextContent = '';
   let startIndex = 0;
