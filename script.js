@@ -236,8 +236,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   const bioMessages = [
-    "Fu*k Guns.lol & Fakecrime.bio got banned too often, so I created my own.",
-    "\"Hello, World!\""
+    "Guns.lol and Ez-bio are shit, so i created my own.",
+    "This thing was all made by RISCALDATXH!!"
+    "If you see this, its your lucky day!"
+    "Did this took hours? Yes. Do i regret it? Nah."
   ];
   let bioText = '';
   let bioIndex = 0;
