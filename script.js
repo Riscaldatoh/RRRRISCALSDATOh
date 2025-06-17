@@ -1,4 +1,5 @@
-let hasUserInteracted = false;
+@@ -1,671 +1,673 @@
+let hasUserInteracted = false;More actions
 
 function initMedia() {
   console.log("initMedia called");
@@ -11,7 +12,7 @@ function initMedia() {
   backgroundMusic.volume = 0.3;
   backgroundVideo.muted = true; 
 
-  
+
   backgroundVideo.play().catch(err => {
     console.error("Failed to play background video:", err);
   });
@@ -53,13 +54,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const socialIcons = document.querySelectorAll('.social-icon');
   const badges = document.querySelectorAll('.badge');
 
-  
+
   const cursor = document.querySelector('.custom-cursor');
   const isTouchDevice = window.matchMedia("(pointer: coarse)").matches;
 
   if (isTouchDevice) {
     document.body.classList.add('touch-device');
-    
+
     document.addEventListener('touchstart', (e) => {
       const touch = e.touches[0];
       cursor.style.left = touch.clientX + 'px';
@@ -93,9 +94,9 @@ document.addEventListener('DOMContentLoaded', () => {
       cursor.style.transform = 'scale(1) translate(-50%, -50%)';
     });
   }
-  
-  
-  const startMessage = "Jus click it ik you wanna do it.";
+
+
+  const startMessage = "Click here to see the motion baby";
   let startTextContent = '';
   let startIndex = 0;
   let startCursorVisible = true;
@@ -236,6 +237,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   const bioMessages = [
+    "Fu*k Guns.lol & Fakecrime.bio got banned too often, so I created my own.",
+    "\"Hello, World!\""
     "Guns.lol and Ez-bio are shit, so i created my own.",
     "This thing was all made by RISCALDATXH!!"
     "If you see this, its your lucky day!"
@@ -315,7 +318,7 @@ document.addEventListener('DOMContentLoaded', () => {
       skillsBlock.style.borderOpacity = '0';
       skillsBlock.style.borderColor = 'transparent';
       skillsBlock.style.backdropFilter = 'none';
-   
+
       profileBlock.style.pointerEvents = 'auto';
       socialIcons.forEach(icon => {
         icon.style.pointerEvents = 'auto';
@@ -472,7 +475,7 @@ document.addEventListener('DOMContentLoaded', () => {
     switchTheme('assets/car_background.mp4', carMusic, 'car-theme');
   });
 
- 
+
   function handleTilt(e, element) {
     const rect = element.getBoundingClientRect();
     const centerX = rect.left + rect.width / 2;
@@ -583,7 +586,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 500);
   });
 
- 
+
   let isShowingSkills = false;
   resultsButton.addEventListener('click', () => {
     if (!isShowingSkills) {
