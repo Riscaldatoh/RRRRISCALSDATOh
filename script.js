@@ -93,7 +93,8 @@ document.addEventListener('DOMContentLoaded', () => {
       cursor.style.transform = 'scale(1) translate(-50%, -50%)';
     });
   }
-
+  
+  
   const startMessage = "Jus click it ik you wanna do it.";
   let startTextContent = '';
   let startIndex = 0;
